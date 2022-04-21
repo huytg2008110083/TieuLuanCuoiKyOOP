@@ -23,6 +23,7 @@ public class DanhSachHangHoa {
             DienMay DienMay = new DienMay();
             DienMay.nhap();
             this.dshangHoa.add(DienMay);
+        System.out.println("da nhap thanh cong");
         }
     }
     //in danh sach hang hoa
@@ -45,6 +46,7 @@ public class DanhSachHangHoa {
     //Xoa hang hoa
     public void xoaHangHoa(QuanLyHangHoa quanlyhangHoa) {
         dshangHoa.remove(quanlyhangHoa);
+        System.out.println("đã xóa hàng hóa");
 
     }
     //Tim hang hoa theo vi tri
@@ -54,9 +56,9 @@ public class DanhSachHangHoa {
         return location;
     }
     //Sua hang hoa
-    public QuanLyHangHoa suaHangHoa(int viTri, QuanLyHangHoa quanlyhangHoa) {
+    public QuanLyHangHoa suaHangHoa(int location, QuanLyHangHoa quanlyhangHoa) {
         TimHangHoaTheoViTri(quanlyhangHoa);
-        dshangHoa.set(viTri, quanlyhangHoa);
+        dshangHoa.set(location, quanlyhangHoa);
         quanlyhangHoa.nhap();
         return quanlyhangHoa;
     }

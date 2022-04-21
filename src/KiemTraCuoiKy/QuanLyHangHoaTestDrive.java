@@ -16,30 +16,30 @@ public class QuanLyHangHoaTestDrive {
         QuanLyHangHoa ThucPham3 = new ThucPham("003", "Choco-Pie", 500, 40000,date, date, "Orion Han Quoc");
         QuanLyHangHoa ThucPham4 = new ThucPham("004", "thit(meat)", 1000, 3000,date, date, "co so che bien thit ca TAM ANH"); 
         QuanLyHangHoa SanhSu1 = new SanhSu("011", "bat ", 100, 10000, "bat trang", date);
-        QuanLyHangHoa SanhSu2 = new SanhSu("012", "Binh hoa", 200, 7000000, "bat trang", date);
-        QuanLyHangHoa SanhSu3 = new SanhSu("013", "Bon rua mat ", 50, 500000, "bat trang", date);
+        QuanLyHangHoa SanhSu2 = new SanhSu("012", "Binh hoa", 200, 20000, "bat trang", date);
+        QuanLyHangHoa SanhSu3 = new SanhSu("013", "dia ", 50, 10000, "bat trang", date);
         QuanLyHangHoa DienMay1 = new DienMay("021", "laptop", 3, 15000000, 12, 210);
         QuanLyHangHoa DienMay2 = new DienMay("022", "Tivi GL", 7, 13000000, 24, 240);
         QuanLyHangHoa DienMay3 = new DienMay("023", "May giat", 4, 8000000, 24, 200);
-
         do {
-            System.out.println("  -------MENU-------");
-            System.out.println("\t||1.Them hang hoa             || ");
-            System.out.println("\t||2.Xoa hang hoa              ||");
-            System.out.println("\t||3.Sua hang hoa              ||");
-            System.out.println("\t||4.in xuat hang hoa co san   ||");
-            System.out.println("\t||5.Tim kiem hang hoa theo ma ||");
-            System.out.println("\t||6.Thoat||");
+            System.out.println("----------------MENU------------");
+            System.out.println("||1.Them hang hoa             || ");
+            System.out.println("||2.Xoa hang hoa              ||");
+            System.out.println("||3.Sua hang hoa              ||");
+            System.out.println("||4.in xuat hang hoa co san   ||");
+            System.out.println("||5.Tim kiem hang hoa theo ma ||");
+            System.out.println("||6.Thoat                     ||");
+            System.out.println("--------------------------------");
             System.out.print("Nhap lua chon: ");
             chon = scanner.nextInt();
             switch (chon) {
                 case 1:
                 do {
-                    System.out.println("-------MENU-THEM------");
-                    System.out.println("1.Them hang thuc pham");
-                    System.out.println("2.Them hang sanh su");
-                    System.out.println("3.Them hang dien may");
-                    System.out.println("4.Thoat\n");
+                    System.out.println("-------MENU-THEM--------");
+                    System.out.println("||1.Them hang thuc pham||");
+                    System.out.println("||2.Them hang sanh su  ||");
+                    System.out.println("||3.Them hang dien may ||");
+                    System.out.println("||4.Thoat              ||");
                     System.out.print("Nhap lua chon: ");
                     temp = scanner.nextInt();
                     switch (temp) {
